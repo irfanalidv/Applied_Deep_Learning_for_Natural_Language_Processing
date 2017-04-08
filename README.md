@@ -5,6 +5,8 @@
 Understanding complex language utterances is also a crucial part of artificial intelligence. Applications of **NLP** are everywhere because people communicate most everything in language: web search, advertisement, emails, customer service, language translation, radiology reports, etc. There are a large variety of underlying tasks and machine learning models powering NLP applications. Recently, **deep learning** approaches have obtained very high performance across many different NLP tasks. 
 These models can often be trained with a single end-to-end model and do not require traditional, task-specific feature engineering. 
 
+<p align="center"><img src="https://i.ytimg.com/vi/V8qrVleGY5U/maxresdefault.jpg"  /></p>
+
 Here we will learn to implement, train, debug, visualize and invent our own neural network models. We will focus on deep excursion into cutting-edge research in deep learning applied to NLP. 
 The final goal will be to involve training a complex recurrent neural network and applying it to a large scale NLP problem. 
 
