@@ -42,3 +42,8 @@ a3w <- subset(a3, type == "word")
 tags <- sapply(a3w$features, `[[`, "POS")
 tags
 table(tags)
+
+## Extract token/POS pairs (all of them): easy.
+
+sprintf("%s/%s", s[a3w], tags)
+
