@@ -35,3 +35,10 @@ View(a3)
 
 ## Variant with POS tag probabilities as (additional) features.
 head(annotate(s, Maxent_POS_Tag_Annotator(probs = TRUE), a2))
+
+## Determine the distribution of POS tags for word tokens.
+
+a3w <- subset(a3, type == "word")
+tags <- sapply(a3w$features, `[[`, "POS")
+tags
+table(tags)
