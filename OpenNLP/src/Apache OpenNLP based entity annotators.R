@@ -31,3 +31,14 @@ word_token_annotator <- Maxent_Word_Token_Annotator()
 
 a2 <- annotate(s, list(sent_token_annotator, word_token_annotator))
 
+## Entity recognition for persons.
+entity_annotator <- Maxent_Entity_Annotator()
+entity_annotator
+#View(annotate(s, entity_annotator, a2))
+annotate(s, entity_annotator, a2)
+## Directly:
+entity_annotator(s, a2)
+## And slice ...
+s[entity_annotator(s, a2)]
+## Variant with sentence probabilities as features.
+annotate(s, Maxent_Entity_Annotator(probs = TRUE), a2)
