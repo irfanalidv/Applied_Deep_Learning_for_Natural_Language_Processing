@@ -47,3 +47,7 @@ table(tags)
 
 sprintf("%s/%s", s[a3w], tags)
 
+## Extract pairs of word tokens and POS tags for second sentence:
+a3ws2 <- annotations_in_spans(subset(a3, type == "word"),
+                              subset(a3, type == "sentence")[2L])[[1L]]
+sprintf("%s/%s", s[a3ws2], sapply(a3ws2$features, `[[`, "POS"))
