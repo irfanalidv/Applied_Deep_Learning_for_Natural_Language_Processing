@@ -1,3 +1,10 @@
+file.sources = list.files(c("./lib/Apache OpenNLP based chunk annotators/", "./lib/Apache OpenNLP based entity annotators/",
+                            "./lib/Apache OpenNLP based POS tag annotators/"), 
+                          pattern="*.R", full.names=TRUE, 
+                          ignore.case=TRUE)
+
+sapply(file.sources,source,.GlobalEnv)
+
 library(openNLP)
 library(openNLPdata)
 library(openNLPmodels.en)
@@ -9,7 +16,7 @@ require("NLP")
 
 
 #We will try the approach for 1 tweet; Finally we will convert this into a function
-x <- "the text of the tweet"
+x <- "Since November 8th, Election Day, the Stock Market has posted $3.2 trillion in GAINS and consumer confidence is at a 15 year high. Jobs!"
 x <- as.String(x)
 
 # Before POS tagging, we need to do Sentence annotation followed by word annotation
