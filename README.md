@@ -13,37 +13,27 @@ The final goal will be to involve training a complex recurrent neural network an
 On the model side we will come across **word vector representations, window-based neural networks, recurrent neural networks, long-short-term-memory models, recursive neural networks, convolutional neural networks** as well as some very novel models involving a memory component. 
 Through hands-on approach we will learn the necessary engineering tricks for making neural networks work on practical problems.
 
-Deep Learning Algorithms
+**Deep Learning Algorithms | NLP Usage**
 
-NLP Usage
-
-Neural Network - NN (feed)
-
-
+**Neural Network - NN (feed)**
 - Part-of-speech Tagging
 - Tokenization
 - Named Entity Recognition
 - Intent Extraction
 
-Recurrent Neural Networks -(RNN)
-
-
+**Recurrent Neural Networks -(RNN)**
 - Machine Translation
 - Question Answering System
 - Image Captioning
 
-Recursive Neural Networks
-
-
+**Recursive Neural Networks**
 - Parsing sentences
 - Sentiment Analysis
 - Paraphrase detection
 - Relation Classification
 - Object detection
 
-Convolutional Neural Network -(CNN)
-
-
+**Convolutional Neural Network -(CNN)**
 - Sentence/ Text classification
 - Relation extraction and classification
 - Spam detection
